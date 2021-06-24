@@ -1,0 +1,35 @@
+body{
+    background-image: url('../resources/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.player{
+    width: 900px;
+    height: 500px;
+    background-color: black;
+    margin: auto;
+}
+
+.centrado{
+    height: 100%;
+}
+
+.buttons{
+    height: 100%;
+}
+
+.buttons img{
+    width: 32px;
+    margin: auto;
+}
+
+.buttons-col{
+    margin: auto;
+}
+
+#centro{
+    margin-left: 24px;
+    margin-right: 24px;
+}
