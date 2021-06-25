@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 body {
     background-image: url('../resources/background.png');
@@ -6,44 +7,47 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .player {
     width: 900px;
     height: 500px;
     margin: auto;
 }
-
-/* .player:hover ~ .buttons, .buttons:hover{
-    display: block;
-} */
-
 .play {
     background-image: url('../resources/play.png');
 }
-
 .centrado {
     height: 100%;
 }
-
 .buttons {
     display: none;
     position: absolute;
-    top: 50%;
-    left: 46%;
+    top: 48%;
+    left: 45%;
 }
-
 .button-play {
     display: block;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 48%;
+    left: 49%;
 }
-
 .buttons-col img {
     margin: auto;
     cursor: pointer;
 }
-
+.title{
+    color: #EDF5FC;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: none;
+    font-family: Lato;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
 #centro {
     margin-left: 24px;
     margin-right: 24px;
@@ -53,17 +57,14 @@ body {
     width: 100%;
     position: sticky;
     bottom: 130px;
-    margin-left: 32px;
-    /* display: none; */
+    margin-left: 20px;
+    display: none;
 }
 
 #progress {
     width: 95%;
     height: 6px;
-    /* display: none; */
 }
-
-/* Code By Webdevtrick ( https://webdevtrick.com ) */
 
 .tooltipLabel {
     background-color: #090B0B;

@@ -1,17 +1,35 @@
-@media only screen and (max-width: 768px) {
-    #video{
-        width: 98%;
-    }
-    .progreso{
-        transform: translate(4px, -45px);
-    }
-}
-
 @media only screen and (max-width: 360px) {
+    body{
+        background-image: url("../resources/bg-mobile.png");
+    }
     #video{
         width: 98%;
     }
     .progreso{
-        transform: translate(0px, -45px);
+        margin-left: 10px;
+        position: absolute;
+        width: 90%;
+        bottom: 38%;
+    }
+    .player{
+        height: auto;
+    }
+    .button-play {
+        left: 44%;
+    }
+    .buttons{
+        left: 28%;
+    }
+    .title{
+        width: 80%;
+        margin-left: 12px;
+        margin-top: 12px;
+        font-family: Lato;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
     }
 }
