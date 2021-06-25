@@ -1,26 +1,26 @@
-@media screen and(min-width: 320px) and(max-width: 768px) {
-    body {
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    body{
         background-image: url("../resources/bg-mobile.png");
     }
-    #video {
+    #video{
         width: 98%;
     }
-    .progreso {
+    .progreso{
         margin-left: 10px;
         position: absolute;
         width: 90%;
         bottom: 38%;
     }
-    .player {
+    .player{
         height: auto;
     }
     .button-play {
         left: 44%;
     }
-    .buttons {
+    .buttons{
         left: 28%;
     }
-    .title {
+    .title{
         width: 80%;
         margin-left: 12px;
         margin-top: 12px;
@@ -29,7 +29,20 @@
         font-style: normal;
         font-weight: 500;
         line-height: 14px;
-        letter-spacing: 0;
+        letter-spacing: 0em;
         text-align: left;
     }
+}
+
+@media (orientation: landscape) {
+  .progreso{
+    width: 95%;
+    bottom: 40px;
+  }
+  .buttons{
+      left: 36%;
+  }
+  .button-play{
+      left: 46%;
+  }
 }
