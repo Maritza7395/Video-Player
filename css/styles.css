@@ -1,35 +1,85 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+
+body {
     background-image: url('../resources/background.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.player{
+.player {
     width: 900px;
     height: 500px;
-    background-color: black;
     margin: auto;
 }
 
-.centrado{
+/* .player:hover ~ .buttons, .buttons:hover{
+    display: block;
+} */
+
+.play {
+    background-image: url('../resources/play.png');
+}
+
+.centrado {
     height: 100%;
 }
 
-.buttons{
-    height: 100%;
+.buttons {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 46%;
 }
 
-.buttons img{
-    width: 32px;
+.button-play {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.buttons-col img {
     margin: auto;
+    cursor: pointer;
 }
 
-.buttons-col{
-    margin: auto;
-}
-
-#centro{
+#centro {
     margin-left: 24px;
     margin-right: 24px;
+}
+
+.progreso {
+    width: 100%;
+    position: sticky;
+    bottom: 130px;
+    margin-left: 32px;
+    /* display: none; */
+}
+
+#progress {
+    width: 95%;
+    height: 6px;
+    /* display: none; */
+}
+
+/* Code By Webdevtrick ( https://webdevtrick.com ) */
+
+.tooltipLabel {
+    background-color: #090B0B;
+    padding: 5px 15px;
+    color: #fff;
+    width: auto;
+    border-radius: 4px;
+    font-family: "IBM Plex Sans";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 13px;
+    letter-spacing: 0;
+}
+.label-arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #ff4b4b;
 }

@@ -1,30 +1,54 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="icon" type="image/png" href="./resources/favicon.png"/> -->
-        <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <!-- <link rel="stylesheet" type="text/css" href="./css/querys.css"> -->
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css">
     <title>Video Player</title>
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="row centrado">
-            <div id="player" class="player">
-                <div class="row buttons">
-                    <div class="buttons-col">
-                        <img src="./resources/prev.png">
-                        <img id="centro" src="./resources/pause.png">
-                        <img src="./resources/next.png">
+            <div id="player" class=" col-md-12 player">
+                <video id="video" width="100%">
+                    <source src="./resources/sacrifice.mp4">
+                </video>
+                <div id="progreso" class="row progreso">
+                    <label id="timer" class="tooltipLabel" for="progress" role="timer">00:00</label>
+                    <progress id="progress" max="100" value="0"></progress>
+                </div>
+                <div id="row-play" class="row button-play">
+                    <div id="play" class="buttons-col" onclick="start()">
+                        <img src="./resources/play.png">
+                    </div>
+                </div>
+                <div id="row-btns" class="row buttons">
+                    <div id="pause" class="buttons-col">
+                        <img src="./resources/prev.png" onclick="skip(-10)">
+                        <img id="centro" src="./resources/pause.png" onclick="pause()">
+                        <img src="./resources/next.png" onclick="skip(10)">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/functions.js"></script>
 </body>
+
 </html>

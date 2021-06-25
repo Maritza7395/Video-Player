@@ -1,0 +1,17 @@
+@media only screen and (max-width: 768px) {
+    #video{
+        width: 98%;
+    }
+    .progreso{
+        transform: translate(4px, -45px);
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #video{
+        width: 98%;
+    }
+    .progreso{
+        transform: translate(0px, -45px);
+    }
+}
