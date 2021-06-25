@@ -33,16 +33,3 @@
         text-align: left;
     }
 }
-
-/* @media (orientation: landscape) {
-  .progreso{
-    width: 95%;
-    bottom: 40px;
-  }
-  .buttons{
-      left: 36%;
-  }
-  .button-play{
-      left: 46%;
-  }
-} */
