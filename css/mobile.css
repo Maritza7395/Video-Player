@@ -34,7 +34,7 @@
     }
 }
 
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
   .progreso{
     width: 95%;
     bottom: 40px;
@@ -45,4 +45,4 @@
   .button-play{
       left: 46%;
   }
-}
+} */
